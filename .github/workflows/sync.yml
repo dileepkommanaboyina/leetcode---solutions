@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: "0 8 * * 6"
 
+# This block fixes the "Resource not accessible" error
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
